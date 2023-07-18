@@ -3,8 +3,6 @@ $(function(){
     var pathname = window.location.pathname;
 
     $('.nav-link').each(function(i){
-        console.log(pathname)
-        console.log(i)
         if(pathname.includes(pages[i])){
             $(this).addClass('active');
             $(this).attr('aria-current', 'page');
@@ -13,3 +11,10 @@ $(function(){
         }
     });
 });
+function buttonClicked(){
+    alert('I am clicked');
+}
+
+function buttonToChangeTextClicked(){
+    document.getElementById('targetTag').innerHTML = "Javascript text";
+}
